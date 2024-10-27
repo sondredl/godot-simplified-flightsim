@@ -27,3 +27,4 @@ func _process(_delta):
 			is_showing = false
 			hide()
 			mat.albedo_color = Color.BLACK
+

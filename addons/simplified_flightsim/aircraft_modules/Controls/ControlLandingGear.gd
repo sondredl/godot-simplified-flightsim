@@ -43,3 +43,4 @@ func receive_input(event):
 func send_to_landing_gears(method_name: String, arguments: Array = []):
 	for gear in landing_gear_modules:
 		gear.callv(method_name, arguments)
+

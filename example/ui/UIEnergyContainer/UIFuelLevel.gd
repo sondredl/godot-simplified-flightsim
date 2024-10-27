@@ -19,3 +19,4 @@ func _ready():
 func update_interface(values: Dictionary):
 	$Panel/Bar.value = values["energy_soc"]
 	$Panel/Bar.tint_progress = ActiveColor if values["energy_active"] else Color(0.5,0.5,0.5,1.0)
+

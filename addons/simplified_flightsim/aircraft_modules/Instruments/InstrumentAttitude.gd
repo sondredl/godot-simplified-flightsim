@@ -107,3 +107,4 @@ func tilt_compensated_bearing(mx: float, my: float, mz: float, r: float, p: floa
 	var compensated_y = my*cos_r + mz*sin_r
 	
 	return atan2(compensated_y, compensated_x)
+

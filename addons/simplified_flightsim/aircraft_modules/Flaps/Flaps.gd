@@ -91,3 +91,4 @@ func flap_increase_position(step: float):
 	var new_value = clamp(flap_position + step, 0.0, 1.0)
 	if new_value != flap_position:
 		flap_set_position(new_value)
+

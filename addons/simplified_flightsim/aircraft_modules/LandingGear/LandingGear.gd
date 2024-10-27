@@ -173,3 +173,4 @@ func _on_stow_completed():
 	is_stowed = true
 	
 	request_update_interface()
+

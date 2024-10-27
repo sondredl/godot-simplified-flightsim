@@ -52,3 +52,4 @@ func load_energy(value: float) -> bool:
 	current_level = min(current_level + value, MaxCapacity)
 	request_update_interface()
 	return (current_level == MaxCapacity)
+

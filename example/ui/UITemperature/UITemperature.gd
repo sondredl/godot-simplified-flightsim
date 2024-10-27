@@ -21,3 +21,4 @@ func _process(_delta):
 			bar.tint_progress = Color(1.0, 0.7, 0.0, 1.0)
 		else:
 			bar.tint_progress = Color(1.0, 0.0, 0.0, 1.0)
+

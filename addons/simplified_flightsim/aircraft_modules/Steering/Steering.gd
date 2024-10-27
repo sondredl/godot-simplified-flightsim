@@ -160,3 +160,4 @@ func set_y(value: float):
 func set_z(value: float):
 	axis_z = value
 	request_update_interface()
+

@@ -26,3 +26,4 @@ func _process(delta):
 	$Elevator.rotation.x = lerp($Elevator.rotation.x, -target_elevator_angle, delta*5.0)
 	$Rudder.rotation.y = lerp($Rudder.rotation.y, -target_rudder_angle, delta*5.0)
 	
+

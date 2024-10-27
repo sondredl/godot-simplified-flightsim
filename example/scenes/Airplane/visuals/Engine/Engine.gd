@@ -17,3 +17,4 @@ func _on_Engine_update_interface(values):
 	var power = values["engine_power"]
 	scale.z = 0.05+power
 	mat.albedo_color = lerp(Color.BLACK, Color.WHITE, power)
+
