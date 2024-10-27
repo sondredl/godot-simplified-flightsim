@@ -11,13 +11,10 @@ extends Control
 
 @export var ActiveColor: Color = Color(0.9, 0.9, 0.5, 1.0)
 @export var Caption: String = "Fuel"
-
 func _ready():
-	$Panel/Label.text = Caption
-	$Panel/Bar.tint_progress = ActiveColor
+    $Panel / Label.text = Caption
+    $Panel / Bar.tint_progress = ActiveColor
 
 func update_interface(values: Dictionary):
-	$Panel/Bar.value = values["energy_soc"]
-	$Panel/Bar.tint_progress = ActiveColor if values["energy_active"] else Color(0.5,0.5,0.5,1.0)
-
-
+    $Panel / Bar.value = values["energy_soc"]
+    $Panel / Bar.tint_progress = ActiveColor if values["energy_active"] else Color(0.5, 0.5, 0.5, 1.0)
