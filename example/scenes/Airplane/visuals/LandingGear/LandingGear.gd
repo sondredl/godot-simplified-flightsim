@@ -17,3 +17,4 @@ func _on_LandingGear_update_interface(values):
 	if values["lgear_down"]:
 		$AnimationPlayer.play("Deploy", -1, 1.0, true) # move to end
 
+

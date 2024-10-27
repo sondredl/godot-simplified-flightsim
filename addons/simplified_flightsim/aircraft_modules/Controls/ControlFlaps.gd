@@ -30,3 +30,4 @@ func receive_input(event):
 		if Input.is_key_pressed(KEY_B):
 			flaps_module.flap_increase_position(0.2)
 
+

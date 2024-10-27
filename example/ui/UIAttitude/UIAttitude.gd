@@ -13,3 +13,4 @@ func update_interface(values: Dictionary):
 	$Panel/Compass/InnerPanel/CenterRef.rotation_degrees = (-values["bearing"])
 	$UIGForce/Panel/Bar.value = values["g"]
 
+

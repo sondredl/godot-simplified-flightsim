@@ -28,3 +28,4 @@ func _process(_delta):
 			hide()
 			mat.albedo_color = Color.BLACK
 
+

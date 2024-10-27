@@ -43,3 +43,4 @@ func _physics_process(delta):
 	if rotation_speed > 0:
 		blades.rotation.y -= MaxRotationSpeed * rotation_speed * delta
 
+

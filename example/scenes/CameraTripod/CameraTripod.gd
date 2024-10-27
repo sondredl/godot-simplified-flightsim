@@ -13,3 +13,4 @@ func _process(delta):
 		rotation.y = lerp_angle(rotation.y, target_node.rotation.y, delta*RotationSpeed)
 		rotation.z = lerp_angle(rotation.z, target_node.rotation.z, delta*RotationSpeed)
 
+

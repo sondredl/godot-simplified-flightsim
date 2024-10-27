@@ -11,3 +11,4 @@ func _process(_delta):
 		$Panel/Altitude/InnerPanel/ValueLabel.text = str(round(aircraft.local_altitude*100)/100)
 		$Panel/Speed/InnerPanel/ValueLabel.text = str(round(aircraft.air_velocity*100)/100)
 
+

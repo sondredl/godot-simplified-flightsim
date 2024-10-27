@@ -10,3 +10,4 @@ func update_interface(values: Dictionary):
 	$Panel/OnlineBox.color = Color.GREEN if values["engine_active"] else Color.RED
 	$Panel/PowerBar/Cursor.position.y = (1.0-values["engine_power"]) * 80#px
 
+

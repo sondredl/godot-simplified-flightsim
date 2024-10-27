@@ -14,3 +14,4 @@ func update_interface(values: Dictionary):
 	$Panel/GearStowing.visible = values["lgear_stowing"]
 	$Panel/GearUp.visible = values["lgear_up"]
 
+
