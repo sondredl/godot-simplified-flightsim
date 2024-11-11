@@ -48,11 +48,11 @@ func _physics_process(delta):
         # aircraft's
 
         # Air Temperature
-        #aircraft.AirTemperature = 25.0 - aircraft.local_altitude*TemperatureAltitudeDropRate
+        # aircraft.AirTemperature = 25.0 - aircraft.local_altitude*TemperatureAltitudeDropRate
 
         # Density is linear towards limit
         # var altitude_progress_towards_limit_normalized = clamp(aircraft.local_altitude / AltitudeOfZeroDensity, 0.0, 1.0) # 1.0 when at limit, 0.0 when sea level
-        #aircraft.AirDensity = 1.0 - altitude_progress_towards_limit_normalized
+        # aircraft.AirDensity = 1.0 - altitude_progress_towards_limit_normalized
 
         # Refuel at stations
         var is_aircraft_full

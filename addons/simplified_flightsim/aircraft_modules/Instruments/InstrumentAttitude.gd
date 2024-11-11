@@ -57,8 +57,8 @@ func process_physic_frame(delta):
             current_longitude = aircraft.location_in_world_frame.x
 
         aircraft.WorldTypes.SPHERICAL:
-            #local_countergravity = -aircraft.to_local(aircraft.world_ref.global_transform.origin).normalized()
-            #local_north = aircraft.to_local(aircraft.global_transform.origin + world_ref.global_transform.basis.y).normalized()
+            # local_countergravity = -aircraft.to_local(aircraft.world_ref.global_transform.origin).normalized()
+            # local_north = aircraft.to_local(aircraft.global_transform.origin + world_ref.global_transform.basis.y).normalized()
 
             current_latitude = asin(aircraft.direction_in_world_frame.y)
             current_longitude = atan2(

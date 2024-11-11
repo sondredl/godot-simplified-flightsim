@@ -106,9 +106,9 @@ func _ready():
         world_ref = internal_world_reference
 
     connect("body_shape_entered", Callable(
-        self, "_on_Aircraft_body_shape_entered"))
+            self, "_on_Aircraft_body_shape_entered"))
     connect("body_shape_exited", Callable(
-        self, "_on_Aircraft_body_shape_exited"))
+            self, "_on_Aircraft_body_shape_exited"))
 
     for child in get_children():
         if (child is AircraftModule) or (child is AircraftModuleSpatial):
@@ -138,6 +138,13 @@ func _unhandled_input(event):
     for module in modules:
         if module.ReceiveInput:
             module.receive_input(event)
+        # if event == Input.is_action_pressed("powerOn"):
+            # module.receive_input(event)
+        # if module.get_vector("throttle"):
+            # module.receive_input(event)
+    # for input in Input:
+    # if input.get_vector("throttle"):
+    # .receive_input(event)
 
 func _physics_process(delta):
     if not world_ref:
@@ -159,6 +166,9 @@ func _process(delta):
     if not world_ref:
         return
 
+    # $Label.text = str(Input.is_action_pressed("powerOn"))
+    # str(Input.is_action_pressed("powerOn"))
+    Input.is_action_pressed("powerOn")
     for module in modules:
         if module.ProcessRender:
             module.process_render_frame(delta)
@@ -257,7 +267,7 @@ func prepare_physics_variables():
     air_velocity = air_velocity_vector.length()
 
     forward_air_speed = -air_velocity_vector.z
-    #forward_air_speed = linear_velocity.dot(-global_transform.basis.z)
+    # forward_air_speed = linear_velocity.dot(-global_transform.basis.z)
     var forward_air_speed_squared = forward_air_speed * forward_air_speed
 
     location_in_world_frame = world_ref.to_local(global_transform.origin)
@@ -381,10 +391,10 @@ func process_physics_frame(delta):
         if local_temperature > MaxTemperature:
             call_deferred("emit_signal", "crashed", -1)
 
-    #	if (_process_frame_count % 10) == 0: # once every 10 frames
-    #		print("Convec: %.03f     Rad: %.03f      Final: %.03f                                %.03f" % [
-    #				temperature_intake, radiated_temperature_outtake, local_temperature,
-    #				stagnation_temperature_K - ZERO_C_IN_K])
+    # if (_process_frame_count % 10) == 0: # once every 10 frames
+    # print("Convec: %.03f     Rad: %.03f      Final: %.03f                                %.03f" % [
+    # temperature_intake, radiated_temperature_outtake, local_temperature,
+    # stagnation_temperature_K - ZERO_C_IN_K])
 
     # ================
     # GRAVITY

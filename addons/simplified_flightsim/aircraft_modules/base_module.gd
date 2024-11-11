@@ -94,10 +94,10 @@ func setup(aircraft_node):
     aircraft = aircraft_node
 
 # func receive_input(event):
-#	pass
+# pass
 
 # func process_physic_frame(delta):
-#	pass
+# pass
 
 # func process_render_frame(delta):
-#	pass
+# pass
