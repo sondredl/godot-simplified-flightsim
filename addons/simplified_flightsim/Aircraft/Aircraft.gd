@@ -106,9 +106,9 @@ func _ready():
         world_ref = internal_world_reference
 
     connect("body_shape_entered", Callable(
-        self, "_on_Aircraft_body_shape_entered"))
+            self, "_on_Aircraft_body_shape_entered"))
     connect("body_shape_exited", Callable(
-        self, "_on_Aircraft_body_shape_exited"))
+            self, "_on_Aircraft_body_shape_exited"))
 
     for child in get_children():
         if (child is AircraftModule) or (child is AircraftModuleSpatial):
