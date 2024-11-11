@@ -2,9 +2,9 @@
 #  BASE CLASS FOR SPATIAL AIRCRAFT MODULES
 # ---------------------------------------------------------------------------
 #
-# All aircraft modules which need 3D coordinates must inherit this class, 
-# and all *MUST* implement the setup(aircraft_node) method. 
-# All must be placed as direct children of # an Aircraft node. 
+# All aircraft modules which need 3D coordinates must inherit this class,
+# and all *MUST* implement the setup(aircraft_node) method.
+# All must be placed as direct children of # an Aircraft node.
 # The properties ReceiveInput, ProcessPhysics and
 # ProcessRender, if set, should be set in _ready().
 #
@@ -27,7 +27,7 @@
 # ModuleType must be set in _ready()
 # The same applies to ModuleTags, except being an Array of String
 #
-# The order processing between modules is the scene tree order, and within 
+# The order processing between modules is the scene tree order, and within
 # a same module:
 #     setup() is called from Aircraft setup
 #     receive_input() is called in sync with the Aircraft's _unhandled_input
@@ -39,24 +39,24 @@
 class_name AircraftModuleSpatial
 extends Node3D
 
+
 @export var ReceiveInput: bool = false
 @export var ProcessPhysics: bool = false
 @export var ProcessRender: bool = false
 @export var ModuleType: String = ""
-@export var ModuleTags = [] # (Array, String)
+@export var ModuleTags = []  # (Array, String)
 @export var UsesEnergy: bool = false
 @export var EnergyType: String = "fuel"
-
 var aircraft = null
 
 func setup(aircraft_node):
-	aircraft = aircraft_node
+    aircraft = aircraft_node
 
-#func receive_input(event):
-#	pass
+# func receive_input(event):
+# pass
 
-#func process_physic_frame(delta):
-#	pass
+# func process_physic_frame(delta):
+# pass
 
-#func process_render_frame(delta):
-#	pass
+# func process_render_frame(delta):
+# pass
