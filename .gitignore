@@ -18,3 +18,5 @@ mono_crash.*.json
 docs/*.import
 *.tres
 *.uid
+bin
+*.dblite
